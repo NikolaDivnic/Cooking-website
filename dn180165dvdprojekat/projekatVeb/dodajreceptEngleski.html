@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="dodavanjeReceptaEngleski.js"></script>
+  </head>
+  <body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         
+          <a class="navbar-brand" href="indexEngleski.html"><img src="slike/logo.png" alt="" srcset="" id = "logo"> Kulinarkse tajne</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="indexEngleski.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dodajreceptEngleski.html">Add recipe</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <div class="dropdown" >
+                    <a class=" dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Recipes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="predjelaEngleski.html">Appetizer</a>
+                      <a class="dropdown-item" href="glavnajelaEngleski.html">Main course</a>
+                      <a class="dropdown-item" href="desertiEngleski.html">Dessert</a>
+                      <a class="dropdown-item" href="uzineEngleski.html">Snack</a>
+                    </div>
+                  </div>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mojnalogEngleski.html">My account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="onamaEngleski.html">
+                      About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="prijavaEngleski.html">Log in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registracijaEngleski.html">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="odjaviseEngleski.html">Logout</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dodajrecept.html"><img src="slike/zastavaSrbije.jpg" alt="" srcset="" class="jezik"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dodajreceptEngleski.html"><img src="slike/zastavaBritanije.jpg" alt="" srcset="" class="jezik"></a>
+                </li>
+              </ul>
+             
+            </div>
+         
+        </nav>
+      </div>
+
+    <br>
+
+    <div class="container">
+      <div class="row">
+          <div class="col">
+              <form class="needs-validation" novalidate>
+                  <br>
+
+                  <div class="form-group">
+                    <label for="naslov">Title</label>
+                    <input type="text" class="form-control" id="naslov" required>
+                    <div class="invalid-feedback">
+                     Enter title.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="kategorija">Category</label>
+                    <select class="form-control" id="kategorija">
+                      <option value="Predjelo">Appetizer</option>
+                      <option value="Glavno jelo">Main course</option>
+                      <option value="Desert">Dessert</option>
+                      <option value = "Uzina">Snack</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tezina">Weight</label>
+                    <select  class="form-control" id="tezina">
+                      <option value="1">Very easy - 1</option>
+                      <option value="2">Easy - 2</option>
+                      <option value="3">Medium  - 3</option>
+                      <option value = "4">Hard - 4</option>
+                      <option value = "5">Very hard - 5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="priprema">Preparation</label>
+                    <textarea class="form-control" id="priprema" rows="3" required></textarea>
+                    <div class="invalid-feedback">
+                      Enter instruction for preparation.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="trajanje">Duration</label>
+                      <input type="number" class="form-control" id="trajanje" required>
+                      <div class="invalid-feedback">
+                        Enter duration.
+                      </div>
+                    </div>
+
+              
+                  <div class="form-group">
+                      <label for="unosVidea">Video</label>
+                      <input type="file" class="form-control-file" id="unosVidea">
+                      <div class="invalid-feedback">
+                        Enter video.
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="unosSlike">Photo</label>
+                    <input type="file" class="form-control-file" id="unosSlike">
+                    <div class="invalid-feedback">
+                      Enter photo.
+                    </div>
+                </div>
+                  <div class="form-group" style="text-align: center;">
+                    <button class="btn btn-primary" type="submit" id = "dodajRecept">Add</button>
+                </div>
+                </form>
+          </div>
+      </div>
+  </div>
+    <br>
+
+
+    <div class="footer">
+        Copyright 2021, Nikola Divnic, Department of Software Engineering School of Electrical Engineering
+  University of Belgrade
+      </div>
+    
+  </body>
+</html>
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
